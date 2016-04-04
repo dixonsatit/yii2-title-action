@@ -17,6 +17,10 @@ class TitleActionColumn extends DataColumn
 
   public $headerOptions = ['class' => 'action-column'];
 
+  public $linkStyle = 'buttongroup'; //default,buttongroup
+
+  public $labelStyle = 'iconText'; //icon,text,iconText
+  
 /**
      * @var string the template used for composing each cell in the action column.
      * Tokens enclosed within curly brackets are treated as controller action IDs (also called *button names*
@@ -45,10 +49,6 @@ class TitleActionColumn extends DataColumn
   public $urlCreator;
 
   public $buttonOptions = [];
-
-  public $linkStyle = 'buttongroup'; //default,buttongroup
-
-  public $labelStyle = 'iconText'; //icon,text,iconText
 
   public $attribute;
 
