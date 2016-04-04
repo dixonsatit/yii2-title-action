@@ -10,6 +10,7 @@ use  yii\grid\DataColumn;
 
 /**
  * Data action columns (DataColumn + ActionColumn)
+ * @author Sathit Seethaphon <dixonsatit@gmail.com>
  */
 class TitleActionColumn extends DataColumn
 {
@@ -165,5 +166,3 @@ class TitleActionColumn extends DataColumn
       return $data.$link;
   }
 }
-
-?>
