@@ -28,4 +28,18 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?= \dixonstarter\grid\AutoloadExample::widget(); ?>```
+<?= GridView::widget([
+    'dataProvider' => $dataProvider,
+    'filterModel' => $searchModel,
+    'tableOptions'=>['class'=>'table table-hover'],
+    'columns' => [
+        [
+          'attribute'=>'title',
+          'linkStyle'=>'buttongroup', // default, buttongroup
+          'labelStyle'=>'iconText' // icon,text,iconText
+          'class'=>'\dixonstarter\grid\TitleActionColumn',
+        ],
+    ],
+]); ?>
+
+```
