@@ -6,7 +6,8 @@ use Yii;
 use Closure;
 use yii\helpers\Html;
 use yii\helpers\Url;
-use  yii\grid\DataColumn;
+use yii\grid\DataColumn;
+use dixonstarter\grid\TitleActionAsset;
 
 /**
  * Data action columns (DataColumn + ActionColumn)
@@ -20,7 +21,7 @@ class TitleActionColumn extends DataColumn
   public $linkStyle = 'buttongroup'; //default,buttongroup
 
   public $labelStyle = 'iconText'; //icon,text,iconText
-  
+
 /**
      * @var string the template used for composing each cell in the action column.
      * Tokens enclosed within curly brackets are treated as controller action IDs (also called *button names*
@@ -57,6 +58,7 @@ class TitleActionColumn extends DataColumn
   public function init()
   {
       parent::init();
+      TitleActionAsset::register(Yii::$app->getView());
       $this->renderLinkStyle();
       $this->initDefaultButtons();
   }
@@ -156,6 +158,9 @@ class TitleActionColumn extends DataColumn
 
   protected function renderDataCellContent($model, $key, $index)
   {
+
+
+
       $link = $this->renderLinkAction($model, $key, $index);
 
       if ($this->content === null) {
