@@ -31,6 +31,7 @@ class TitleActionColumn extends DataColumn
      * ```
      * buttonGroup Template "<p class="title-action btn-group btn-group-xs text-center" role="group"> {view}  {update}  {delete} </p>"
      * default Template "<p class="title-action"> {view} {update} {delete} </p>"
+     *
      * @see buttons
      */
   public $template = null;
