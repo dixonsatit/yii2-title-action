@@ -43,3 +43,15 @@ Once the extension is installed, simply use it in your code by  :
 ]); ?>
 
 ```
+
+![](img/p1.png)
+
+![](img/p2.png)
+
+![](img/p3.png)
+
+![](img/p4.png)
+
+![](img/p5.png)
+
+![](img/p6.png)
